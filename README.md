@@ -5,7 +5,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - [1. KorPatBERT](#1-korpatbert)
 - [2. KorPatBERT 개요](#2-korpatbert-개요)
   - 2.1. 사전학습 환경
-  - 2.2. 코퍼스
+  - [2.2. 코퍼스](#2-2-)
   - 2.3. 사전 및 토크나이저
   - 2.4. 성능결과
 - [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
@@ -42,7 +42,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - NVIDIA AMP(Automated Mixed Precision) 방식을 활용하여, 메모리 최적화
 - 128 Sequence 2,300,000 Step 학습 + 512 Sequence 750,000 Step 학습
 
-### 2.2. 코퍼스
+### 2-2. 코퍼스
 - 특허문헌수 : 4,065,519건
 - 문장 수 : 460,448,189건
 - 토큰 수 : 약 266억건
