@@ -7,7 +7,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
   - [2-1. 사전학습 환경](#2-1-사전합습-환경)
   - [2-2. 코퍼스](#2-2-코퍼스)
   - [2-3. 사전 및 토크나이저](#2-3-사전-및-토크나이저)
-  - [2-4. 평가결과](#2-4-평가결과)
+  - [2-4. 평가](#2-4-평가)
 - [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
   - [3-1. 요구사항](#3-1-요구사항)
   - [3-2. 토크나이저](#3-2-토크나이저)
@@ -55,7 +55,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - SentencePiece 스페셜 토큰 : [PAD], [UNK], [CLS], [SEP], [MASK]
 - KorPat Tokenizer 파일명 : korpat_tokenizer.py
 
-### 2-4. 결과
+### 2-4. 평가
 - 특허데이터 기반 CPC 분류 태스크
       - 144 labels, train data 39,053, dev data 13,052, test data 16,316
 
