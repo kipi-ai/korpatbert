@@ -22,7 +22,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
  
 &nbsp;
 ## 1. KorPatBERT 소개
-
+![KorPatBERT](./imgs/korpatbert.png)
 
 &nbsp;
 ## 2. KorPatBERT 개요
