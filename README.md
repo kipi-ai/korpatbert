@@ -60,7 +60,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
       - 144 labels, train data 39,053, dev data 13,052, test data 16,316
 
 |기업/기관|모델|평가점수(ACC)|
-|--|--|--|
+|:--:|:--:|:--:|
 |`Google`|`BERT`|72.33|
 |`한국특허정보원`|`KorPatBERT`|76.10|
 
@@ -137,7 +137,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 
 ####  제공 파일
 |경로|파일명|설명|
-|--|--|--|
+|:--:|:--|:--|
 |/|pat_all_mecab_dic.csv|Mecab 특허사용자사전|
 |/|lm_test_data.tsv|분류 샘플 데이터 셋|
 |/|korpat_tokenizer.py|KorPat Tokenizer 프로그램|
