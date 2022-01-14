@@ -152,8 +152,8 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |pretrained/|model.ckpt-381250.data-00000-of-00001|KorPatBERT Model 파일|
 
 ### 4.2. 라이센스
-모델 및 코드를 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 전문은 [LICENSE](https://github.com/kipi-ai/doc/LICENS.png) 파일에서 확인하실 수 있습니다.
+모델 및 코드를 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 내용은 [LICENSE](./docs/LICENS.png) 파일에서 확인하실 수 있습니다.
 
 ### 4.3. 협약서
-모델 및 코드를 사용할 경우 협약서 내용을 준수해주세요. 라이선스 전문은 [LICENSE](https://github.com/kipi-ai/doc/AGREEMENT.png) 파일에서 확인하실 수 있습니다.
+모델 및 코드를 사용할 경우 협약서 내용을 준수해주세요. 협약서 내용은 [AGREEMENT](./docs/AGREEMENT.png) 파일에서 확인하실 수 있습니다.
 
