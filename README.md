@@ -68,7 +68,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 &nbsp;
 ## 3. KorPatBERT 사용안내
 ### 3.1. 요구사항
-|<center>프로그램명</center>|<center>버전</center>|<center>설치안내경로</center>|<center>필수여부</center>|
+|<center>프로그램명</center>|<center>버전</center>|<center>설치안내 경로</center>|<center>필수여부</center>|
 |--|--|--|:--:|
 |python|3.6 이상|https://www.python.org/|Y|
 |anaconda|4.6.8 이상|https://www.anaconda.com/|N|
