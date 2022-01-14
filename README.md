@@ -11,7 +11,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
   - [3-1. 요구사항](#3-1-요구사항)
   - [3-2. 토크나이저](#3-2-토크나이저)
-    - [3-2-1. Mecab 설치 및 사용자사전](#3-2-1-mecab-설치-및-사용자사전)
+    - [3-2-1. Mecab 설치 및 사용자 사전](#3-2-1-mecab-ko-설치-및-사용자-사전)
     - [3-2-2. MSP 토크나이저](#3-2-2-msp-토크나이저)
   - [3-3. 파인튜닝](#3-3-파인튜닝)
 - [4. KorPatBERT 정책 및 제공](#4-korpatbert-정책-및-제공)
@@ -89,7 +89,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 	mecab-ko-dic > 2.1.1
 	mecab-python > 0.996-ko-0.9.2
 
-#### 3-2-2. MSP토크나이저
+#### 3-2-2. MSP 토크나이저
 	from korpat_tokenizer import Tokenizer
 	
 	# (vocab_path=Vocabulary 파일 경로, cased=한글->True, 영문-> False)
