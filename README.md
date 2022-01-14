@@ -5,19 +5,19 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - [1. KorPatBERT](#1-korpatbert)
 - [2. KorPatBERT 개요](#2-korpatbert-개요)
   - 2.1. 사전학습 환경
-  - [2.2. 코퍼스](#2-2-코퍼스)
-  - [2.3. 사전 및 토크나이저](#2-3-사전-및-토크나이저)
-  - [2.4. 성능결과](#2-4-성능결과)
+  - 2.2. 코퍼스
+  - 2.3. 사전 및 토크나이저
+  - 2.4. 성능결과
 - [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
-  - [3.1. 요구사항](#3-1-요구사항)
-  - [3.2. 토크나이저](#3-2-토크나이저)
-    - [3.2.1. Mecab 설치 및 사용자사전 추가](#3-2-1-mecab-설치-및-사용자사전-추가)
-    - [3.2.2. MSP 토크나이저 사용](#3-2-2-msp-토크나이저-사용)
-  - [3.3. 파인튜닝](#3-3-파인튜닝)
+  - 3.1. 요구사항
+  - 3.2. 토크나이저
+    - 3.2.1. Mecab 설치 및 사용자사전
+    - 3.2.2. MSP 토크나이저
+  - 3.3. 파인튜닝
 - [4. KorPatBERT 정책 및 제공](#4-korpatbert-정책-및-제공)
-  - [4.1. 담당부서 및 모델 제공](#4-1-담당부서-및-모델제공-문의)
-  - [4.2. 라이센스](#4-2-라인센스)
-  - [4.3. 협약서](#4-3-협약서) 
+  - 4.1. 담당부서 및 모델 제공
+  - 4.2. 라이센스
+  - 4.3. 협약서
  
 &nbsp;
 ## 1. KorPatBERT
@@ -83,13 +83,13 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |soynlp|0.0.493 이상|https://github.com/lovit/soynlp|N|
 
 ### 3.2. 토크나이저
-#### 3.2.1. Mecab-ko 설치 및 사용자 사전 추가
+#### 3.2.1. Mecab-ko 설치 및 사용자 사전
 	Installation URL: https://bitbucket.org/eunjeon/mecab-ko-dic/src/master/
 	mecab-ko > 0.996-ko-0.9.2
 	mecab-ko-dic > 2.1.1
 	mecab-python > 0.996-ko-0.9.2
 
-#### 3.2.2. MSP토크나이저 사용
+#### 3.2.2. MSP토크나이저
 	from korpat_tokenizer import Tokenizer
 	
 	# (vocab_path=Vocabulary 파일 경로, cased=한글->True, 영문-> False)
