@@ -49,7 +49,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - 코퍼스 크기 : 약 120GB
 
 ### 2.3. 사전 및 토크나이저
-특허 텍스트에 특화된 MSP 토크나이저(Mecab-ko Sentencepiece Patent Tokenizer)라를 사용합니다. 
+특허 텍스트에 특화된 MSP 토크나이저(Mecab-ko Sentencepiece Patent Tokenizer)를 사용합니다. 
 언어모델 학습에 사용된 특허문헌을 대상으로 약 660만개의 주요 명사 및 복합명사를 추출하였으며, 이를 한국어 형태소분석기 Mecab-ko의 사용자 사전에 추가 후 Google SentencePiece를 통하여 Subword로 분할하는 방식의 토크나이저입니다.
 - Mecab-ko 특허 사용자 사전파일명 : pat_all_mecab_dic.csv (6,663,693개 용어)
 - SentencePiece 사전파일명 : korpat_vocab.txt  (21,400개 토큰)
