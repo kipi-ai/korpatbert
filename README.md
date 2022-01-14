@@ -4,7 +4,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ## 
 - [1. KorPatBERT](#1-korpatbert)
 - [2. KorPatBERT 개요](#2-korpatbert-개요)
-  - [2.1. 사전학습 환경](#2.1-사전학습-환경)
+  - 2.1. 사전학습 환경
   - [2.2. 코퍼스](#2-2-코퍼스)
   - [2.3. 사전 및 토크나이저](#2-3-사전-및-토크나이저)
   - [2.4. 성능결과](#2-4-성능결과)
