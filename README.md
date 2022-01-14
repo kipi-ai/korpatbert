@@ -92,27 +92,26 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 #### 3.2.2. MSP토크나이저 사용
 	 from korpat_tokenizer import Tokenizer
 	
-		if __name__ == '__main__':
-		# (vocab_path=Vocabulary 파일 경로, cased=한글->True, 영문-> False)
-		tokenizer = Tokenizer(vocab_path="./korpat_vocab.txt", cased=True)
+	# (vocab_path=Vocabulary 파일 경로, cased=한글->True, 영문-> False)
+	tokenizer = Tokenizer(vocab_path="./korpat_vocab.txt", cased=True)
 		
-		# 테스트 샘플 문장
-		example = "본 고안은 주로 일회용 합성세제액을 집어넣어 밀봉하는 세제액포의 내부를 원호상으로 열중착하되 세제액이 배출되는 절단부 쪽으로 내벽을 협소하게 형성하여서 내부에 들어있는 세제액을 잘짜질 수 있도록 하는 합성세제 액포에 관한 것이다."
+	# 테스트 샘플 문장
+	example = "본 고안은 주로 일회용 합성세제액을 집어넣어 밀봉하는 세제액포의 내부를 원호상으로 열중착하되 세제액이 배출되는 절단부 쪽으로 내벽을 협소하게 형성하여서 내부에 들어있는 세제액을 잘짜질 수 있도록 하는 합성세제 액포에 관한 것이다."
 
-		# 샘플 토크나이즈
-		tokens = tokenizer.tokenize(example)
+	# 샘플 토크나이즈
+	tokens = tokenizer.tokenize(example)
+	
+	# 샘플 인코딩 (max_len=토큰 최대 길이)
+	ids, _ = tokenizer.encode(example, max_len=256)
+	# 샘플 디코딩
+	decoded_tokens = tokenizer.decode(ids)
 		
-		# 샘플 인코딩 (max_len=토큰 최대 길이)
-		ids, _ = tokenizer.encode(example, max_len=256)
-		# 샘플 디코딩
-		decoded_tokens = tokenizer.decode(ids)
-		
-		# 결과 출력
-		print("Length of Token dictionary ===>", len(tokenizer._token_dict.keys()))
-		print("Input example ===>", example)
-		print("Tokenized example ===>", tokens)
-		print("Converted example to IDs ===>", ids)
-		print("Converted IDs to example ===>", decoded_tokens)
+	# 결과 출력
+	print("Length of Token dictionary ===>", len(tokenizer._token_dict.keys()))
+	print("Input example ===>", example)
+	print("Tokenized example ===>", tokens)
+	print("Converted example to IDs ===>", ids)
+	print("Converted IDs to example ===>", decoded_tokens)
 
 ####  Result	
 	Length of Token dictionary  ===>  21400
