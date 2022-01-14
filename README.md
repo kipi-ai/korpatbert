@@ -2,11 +2,8 @@
 
 # 특허분야 한국어 AI언어모델 KorPatBERT
 KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr)이 연구개발한 AI 언어모델입니다. 특허분야 한국어 자연어처리 문제 해결 및 특허산업분야의 지능정보화 인프라 마련을 위해 기존 [Google BERT base](https://github.com/google-research/bert) 모델의 아키텍쳐를 기반으로 대용량 국내특허문헌(약 406만건, 120GB, 266억 토큰)을 사전학습(pre-training)하였습니다.
-
-##
+## 
 - [1. KorPatBERT 소개](#1.-KorPatBERT-소개)
-  - [1.1. 시범 보급](#1.1.-시범-보급)
-  - [1.2. 언론보도](#1.2.-언론보도)
 - [2. KorPatBERT 개요](#2.-KorPatBERT-개요)
   - [2.1. 사전학습 환경](#2.1.-사전학습-환경)
   - [2.2. 학습데이터](#2.2.-학습데이터)
@@ -23,10 +20,11 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
   - [4.2. 라이센스](#4.2.-라인센스)
   - [4.3. 협약서](#4.3.-협약서) 
  
-
+&nbsp;
 ## 1. KorPatBERT 소개
 
 
+&nbsp;
 ## 2. KorPatBERT 개요
 ### 2.1. 사전학습 환경
 #### 개발환경
@@ -65,7 +63,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |`Google`|`BERT`|72.33|
 |`한국특허정보원`|`KorPatBERT`|76.10|
 
-
+&nbsp;
 ## 3. KorPatBERT 사용안내
 ### 3.1. 요구사항
 |프로그램명|버전|설치안내경로|필수여부|
@@ -125,15 +123,15 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ### 3.3. 파인튜닝
 ※ [Google BERT base](https://github.com/google-research/bert)에서 설명하는 학습 방식과 동일하며, 사용 예시는  `특허분야 사전학습 언어모델(KorPatBERT) 사용자 매뉴얼` 2.3절 참조
 
-
+&nbsp;
 ## 4. KorPatBERT 정책 및 제공 문의
 ### 4.1. 담당부서 및 모델제공 문의
 - 담당부서 : IP디지털혁신센터 지능정보전략팀
 - 모델제공 및 기타문의 : ai_support@kipi.or.kr
 
 #### 제공 순서
-1. 이메일(ai_support@kipi.or.kr)을 통해 제공받을 의사를 표시합니다.
-2. 라이센스를 확인하시고, 사용신청서, 협약서에 서명하여 이메일로 송부합니다.
+1. 이메일(ai_support@kipi.or.kr)을 통해 기타 문의 또는 신청 의사를 표시합니다.
+2. 담당자로부터 회신이 오면 라이센스를 확인하시고, 사용신청서, 협약서에 서명하여 이메일로 송부합니다.
 3. 언어모델 및 사용자 매뉴얼을 제공받습니다.
 
 ####  제공 파일
