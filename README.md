@@ -61,7 +61,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 
 |<center>기업/기관</center>|<center>모델</center>|<center>평가점수(ACC)</center>|
 |:--:|:--:|:--:|
-|`Google`|`BERT`|72.33|
+|Google|BERT|72.33|
 |`한국특허정보원`|`KorPatBERT`|76.10|
 
 &nbsp;
@@ -90,7 +90,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 	mecab-python > 0.996-ko-0.9.2
 
 #### 3.2.2. MSP토크나이저 사용
-	 from korpat_tokenizer import Tokenizer
+	from korpat_tokenizer import Tokenizer
 	
 	# (vocab_path=Vocabulary 파일 경로, cased=한글->True, 영문-> False)
 	tokenizer = Tokenizer(vocab_path="./korpat_vocab.txt", cased=True)
