@@ -2,19 +2,19 @@
 KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr)이 연구개발한 AI 언어모델입니다. 
 <br>특허분야 한국어 자연어처리 문제 해결 및 특허산업분야의 지능정보화 인프라 마련을 위해 기존 [Google BERT base](https://github.com/google-research/bert) 모델의 아키텍쳐를 기반으로 대용량 국내 특허문헌(약 406만건, 120GB, 266억 토큰)을 사전학습(pre-training)하였고, 무료로 제공하고 있습니다.
 ## 
-- [1. KorPatBERT](#1-KorPatBERT)
-- [2. KorPatBERT 개요](#2-KorPatBERT-개요)
+- [1. KorPatBERT](#1-korpatbert)
+- [2. KorPatBERT 개요](#2-korpatbert-개요)
   - [2.1. 사전학습 환경](#2-1-사전학습-환경)
-  - [2.2. 학습데이터](#2-2-학습데이터)
+  - [2.2. 코퍼스](#2-2-코퍼스)
   - [2.3. 사전 및 토크나이저](#2-3-사전-및-토크나이저)
   - [2.4. 성능결과](#2-4-성능결과)
-- [3. KorPatBERT 사용 안내](#3-KorPatBERT-사용-안내)
+- [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
   - [3.1. 요구사항](#3-1-요구사항)
   - [3.2. 토크나이저](#3-2-토크나이저)
-    - [3.2.1. Mecab 설치 및 사용자사전 추가](#3-2-1-Mecab-설치-및-사용자사전-추가)
-    - [3.2.2. MSP 토크나이저 사용](#3-2-2-MSP-토크나이저-사용)
+    - [3.2.1. Mecab 설치 및 사용자사전 추가](#3-2-1-mecab-설치-및-사용자사전-추가)
+    - [3.2.2. MSP 토크나이저 사용](#3-2-2-msp-토크나이저-사용)
   - [3.3. 파인튜닝](#3-3-파인튜닝)
-- [4. KorPatBERT 정책 및 제공 문의](#4-KorPatBERT-정책-및-제공-문의)
+- [4. KorPatBERT 정책 및 제공](#4-korpatbert-정책-및-제공)
   - [4.1. 담당부서 및 모델 제공](#4-1-담당부서-및-모델제공-문의)
   - [4.2. 라이센스](#4-2-라인센스)
   - [4.3. 협약서](#4-3-협약서) 
@@ -42,7 +42,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - NVIDIA AMP(Automated Mixed Precision) 방식을 활용하여, 메모리 최적화
 - 128 Sequence 2,300,000 Step 학습 + 512 Sequence 750,000 Step 학습
 
-### 2.2. 학습데이터
+### 2.2. 코퍼스
 - 특허문헌수 : 4,065,519건
 - 문장 수 : 460,448,189건
 - 토큰 수 : 약 266억건
@@ -124,7 +124,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ※ [Google BERT base](https://github.com/google-research/bert) 학습 방식과 동일하며, 사용 예시는  `특허분야 사전학습 언어모델(KorPatBERT) 사용자 매뉴얼` 2.3절 참조하세요.
 
 &nbsp;
-## 4. KorPatBERT 정책 및 제공 문의
+## 4. KorPatBERT 정책 및 제공
 ### 4.1. 담당부서 및 모델제공 문의
 - 담당부서 : IP디지털혁신센터 지능정보전략팀
 - 모델제공 및 기타문의 : ai_support@kipi.or.kr
