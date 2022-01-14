@@ -59,7 +59,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - 특허데이터 기반 CPC 분류 태스크
       - 144 labels, train data 39,053, dev data 13,052, test data 16,316
 
-|기업/기관|모델|평가점수(ACC)|
+|<center>기업/기관</center>|<center>모델</center>|<center>평가점수(ACC)</center>|
 |:--:|:--:|:--:|
 |`Google`|`BERT`|72.33|
 |`한국특허정보원`|`KorPatBERT`|76.10|
@@ -67,8 +67,8 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 &nbsp;
 ## 3. KorPatBERT 사용안내
 ### 3.1. 요구사항
-|프로그램명|버전|설치안내경로|필수여부|
-|--|--|--|--|
+|<center>프로그램명</center>|<center>버전</center>|<center>설치안내경로</center>|<center>필수여부</center>|
+|--|--|--|:--:|
 |python|3.6 이상|https://www.python.org/|Y|
 |anaconda|4.6.8 이상|https://www.anaconda.com/|N|
 |tensorflow|2.2.0 이상|https://www.tensorflow.org/install/pip?hl=ko|Y|
@@ -136,7 +136,7 @@ KorPatBERT(Korean patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 3. 언어모델 및 사용자 매뉴얼을 제공받습니다.
 
 ####  제공 파일
-|경로|파일명|설명|
+|<center>경로</center>|<center>파일명</center>|<center>설명</center>|
 |:--:|:--|:--|
 |/|pat_all_mecab_dic.csv|Mecab 특허사용자사전|
 |/|lm_test_data.tsv|분류 샘플 데이터 셋|
