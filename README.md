@@ -57,7 +57,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 
 ### 2-4. 평가
 - 특허데이터 기반 CPC 분류 태스크
-      - 144 labels, train data 39,053, dev data 13,052, test data 16,316
+      - 144 labels, train data 351,487, dev data 39,053, test data 16,316
 
 |<center>기업/기관</center>|<center>모델</center>|<center>평가점수(ACC)</center>|
 |:--:|:--:|:--:|
