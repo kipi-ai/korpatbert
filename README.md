@@ -157,5 +157,5 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 모델 및 코드를 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 내용은 [LICENSE](./docs/LICENS.png) 파일에서 확인하실 수 있습니다.
 
 ### 4-3. 협약서
-모델 및 코드를 사용할 경우 협약서 내용을 준수해주세요. 협약서 내용은 [AGREEMENT](./docs/AGREEMENT.png) 파일에서 확인하실 수 있습니다.
+모델 및 코드를 사용할 경우 협약서 내용을 준수해주세요. 협약서 내용은 기관/기업 [AGREEMENT](./docs/AGREEMENT_corp.png), 개인 [AGREEMENT](./docs/AGREEMENT_indiv.png) 파일에서 확인하실 수 있습니다.
 
