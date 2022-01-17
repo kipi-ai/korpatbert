@@ -65,7 +65,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |KorBERT|73.29|
 |KoBERT|33.75|
 |KrBERT|72.39|
-|<b>`KorPatBERT`</b>|<b>`76.32`</b>|
+|<b>KorPatBERT</b>|<b>76.32</b>|
 
 &nbsp;
 ## 3. KorPatBERT 사용안내
