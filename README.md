@@ -38,7 +38,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - Horovod >= 0.19.2
 #### 학습환경
 - 특허문헌 120GB 코퍼스의 4억 6천만 문장 학습
-- NVIDIA V100 32GB GPU 16개 및 분산학습 라이브러리 Horovod를 이용하여 학습
+- NVIDIA V100 32GB GPU 16개로 분산학습 라이브러리 Horovod를 이용하여 학습
 - NVIDIA AMP(Automated Mixed Precision) 방식을 활용하여, 메모리 최적화
 - 128 Sequence 2,300,000 Step 학습 + 512 Sequence 750,000 Step 학습
 
