@@ -129,7 +129,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 &nbsp;
 ## 4. KorPatBERT 정책 및 제공
 ### 4-1. 담당부서 및 모델제공 문의
-- 담당부서 : IP디지털혁신센터 지능정보전략팀
+- 담당부서 : 한국특허정보원 IP디지털혁신센터
 - 모델제공 및 기타문의 : ai_support@kipi.or.kr
 
 #### 제공 순서
