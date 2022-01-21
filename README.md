@@ -139,20 +139,20 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 3. 언어모델 및 사용자 매뉴얼을 제공받습니다.
 
 ####  제공 파일
-|<center>경로</center>|<center>파일명</center>|<center>설명</center>|
-|--|--|--|
-|/|pat_all_mecab_dic.csv|Mecab 특허사용자사전|
-|/|lm_test_data.tsv|분류 샘플 데이터 셋|
-|/|korpat_tokenizer.py|KorPat Tokenizer 프로그램|
-|/|test_tokenize.py|Tokenizer 사용 샘플|
-|/|test_tokenize.ipynb|Tokenizer 사용 샘플 (주피터)|
-|/|test_lm.py|언어모델 사용 샘플|
-|/|test_lm.ipynb|언어모델 사용 샘플 (주피터)|
-|pretrained/|korpat_bert_config.json|KorPatBERT Config 파일|
-|pretrained/|korpat_vocab.txt|KorPatBERT Vocabulary 파일|
-|pretrained/|model.ckpt-381250.meta|KorPatBERT Model 파일|
-|pretrained/|model.ckpt-381250.index|KorPatBERT Model 파일|
-|pretrained/|model.ckpt-381250.data-00000-of-00001|KorPatBERT Model 파일|
+|<center>파일명</center>|<center>설명</center>|
+|--|--|
+|pat_all_mecab_dic.csv|Mecab 특허사용자사전|
+|lm_test_data.tsv|분류 샘플 데이터 셋|
+|korpat_tokenizer.py|KorPat Tokenizer 프로그램|
+|test_tokenize.py|Tokenizer 사용 샘플|
+|test_tokenize.ipynb|Tokenizer 사용 샘플 (주피터)|
+|test_lm.py|언어모델 사용 샘플|
+|test_lm.ipynb|언어모델 사용 샘플 (주피터)|
+|korpat_bert_config.json|KorPatBERT Config 파일|
+|korpat_vocab.txt|KorPatBERT Vocabulary 파일|
+|model.ckpt-381250.meta|KorPatBERT Model 파일|
+|model.ckpt-381250.index|KorPatBERT Model 파일|
+|model.ckpt-381250.data-00000-of-00001|KorPatBERT Model 파일|
 
 ### 4-2. 라이선스
 모델 및 코드를 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 내용은 [LICENSE](./docs/LICENS.png) 파일에서 확인하실 수 있습니다.
