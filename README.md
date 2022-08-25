@@ -1,7 +1,9 @@
 # 특허분야 한국어 AI언어모델 KorPatBERT
 KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr)이 연구개발한 AI 언어모델입니다. 
 <br>특허분야 한국어 자연어처리 문제 해결 및 특허산업분야의 지능정보화 인프라 마련을 위해 기존 [Google BERT base](https://github.com/google-research/bert) 모델의 아키텍쳐를 기반으로 대용량 국내 특허문헌(약 406만건, 4억6천만 문장, 266억 토큰, 120GB)을 사전학습(pre-training)하였고, 무료로 제공하고 있습니다.
-<br>KorPatBERT [언론보도](http://www.aitimes.kr/news/articleView.html?idxno=23637) 소개</br>
+<br>
+- KorPatBERT [언론보도](http://www.aitimes.kr/news/articleView.html?idxno=23637) 소개
+- Google ELECTRA 기반 특허분야 특화된 언어모델 [KorPatELECTRA](https://github.com/kipi-ai/korpatelectra) 소개 
 ## 
 - [1. KorPatBERT](#1-korpatbert)
 - [2. KorPatBERT 개요](#2-korpatbert-개요)
