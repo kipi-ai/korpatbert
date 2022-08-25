@@ -11,13 +11,13 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
   - [2-2. 코퍼스](#2-2-코퍼스)
   - [2-3. 사전 및 토크나이저](#2-3-사전-및-토크나이저)
   - [2-4. 평가](#2-4-평가)
-- [3. KorPatBERT 사용안내](#3-korpatbert-사용안내)
+- [3. KorPatBERT 사용 안내](#3-korpatbert-사용-안내)
   - [3-1. 요구사항](#3-1-요구사항)
   - [3-2. 토크나이저](#3-2-토크나이저)
     - [3-2-1. Mecab 설치 및 사용자 사전](#3-2-1-mecab-ko-설치-및-사용자-사전)
     - [3-2-2. MSP 토크나이저](#3-2-2-msp-토크나이저)
   - [3-3. 파인튜닝](#3-3-파인튜닝)
-- [4. KorPatBERT 사용 안내](#4-korpatbert-사용-안내)
+- [4. KorPatBERT 신청 안내](#4-korpatbert-사용-안내)
   - [4-1. 사용신청 및 담당부서 안내](#4-1-사용신청-및-담당부서-안내)
   - [4-2. 사용신청 절차](#4-2-사용신청-절차)
   - [4-3. 제공 파일](#4-3-제공-파일)
@@ -72,7 +72,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |<b>KorPatBERT</b>|<b>76.32</b>|
 
 &nbsp;
-## 3. KorPatBERT 사용안내
+## 3. KorPatBERT 사용 안내
 ### 3-1. 요구사항
 |<center>프로그램명</center>|<center>버전</center>|<center>설치안내 경로</center>|<center>필수여부</center>|
 |--|--|--|:--:|
@@ -131,7 +131,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ※ [Google BERT base](https://github.com/google-research/bert) 학습 방식과 동일하며, 사용 예시는  `특허분야 사전학습 언어모델(KorPatBERT) 사용자 매뉴얼` 2.3절 참조하세요.
 
 &nbsp;
-## 4. KorPatBERT 사용 안내
+## 4. KorPatBERT 신청 안내
 ### 4-1. 사용신청 및 담당부서 안내
 한국특허정보원 언어모델에 관심 있는 기관·기업, 연구자를 대상으로 일정한 절차를 통해 보급을 수행 중에 있습니다. 아래의 사용신청 절차에 따라 사용신청서 및 협약서를 작성하시어 담당자의 이메일로 신청·접수를 하시면 됩니다.
 - 담당부서 : IP디지털혁신센터 지능정보전략팀
