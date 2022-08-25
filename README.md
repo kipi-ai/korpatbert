@@ -169,3 +169,5 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ### 4-4. 라이선스
 모델 및 코드를 사용할 경우 라이선스 내용을 준수해주세요. 특히 상업적 활용을을 위해서는 사전협의가 필요합니다. 라이선스 내용은 [한국특허정보원 언어모델 상업용 라이선스 안내.pdf](./docs/한국특허정보원 언어모델 상업용 라이선스 안내.pdf) 파일에서 확인하실 수 있습니다.
 
+※ [Google BERT base](https://github.com/google-research/bert) 
+
