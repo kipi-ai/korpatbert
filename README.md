@@ -89,6 +89,8 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |<b>KorPatBERT-base</b>|<b>76.32</b>|
 |<b>KorPatBERT-large</b>|<b>77.06</b>|
 
+&nbsp;
+
 - 특허문헌 CPC코드 메인그룹(maingroup) 분류 태스크
 	- 10,327 labels, train data 4,991,984, dev data 554,665, test data 297,034
 
@@ -161,7 +163,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 ## 4. KorPatBERT 신청 안내
 ### 4-1. 사용신청 및 담당부서 안내
 한국특허정보원 언어모델에 관심 있는 기관·기업, 연구자를 대상으로 일정한 절차를 통해 보급을 수행 중에 있습니다. 아래의 사용신청 절차에 따라 사용신청서 및 협약서를 작성하시어 담당자의 이메일로 신청·접수를 하시면 됩니다.
-- 담당부서 : IP디지털혁신센터 지능정보전략팀
+- 담당부서 : IP디지털혁신센터 지능정보전략실
 - 모델제공 및 기타문의 : ai_support@kipi.or.kr
 
 
