@@ -1,9 +1,11 @@
-# 특허분야 특화된 한국어 AI언어모델 KorPatBERT
+# 특허분야 특화된 한국어 AI언어모델 KorPatBERT(base, large)
 KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr)이 연구개발한 AI 언어모델입니다. 
-<br>특허분야 한국어 자연어처리 문제 해결 및 특허산업분야의 지능정보화 인프라 마련을 위해 기존 [Google BERT base](https://github.com/google-research/bert) 모델의 아키텍쳐를 기반으로 대용량 국내 특허문헌(약 406만건, 4억6천만 문장, 266억 토큰, 120GB)을 사전학습(pre-training)하였고, 무료로 제공하고 있습니다.
+<br>특허분야 한국어 자연어처리 문제 해결 및 특허산업분야의 지능정보화 인프라 마련을 위해 기존 [Google BERT base](https://github.com/google-research/bert) 모델의 아키텍쳐를 기반으로 대용량 국내 특허문헌
+(base : 약 406만건, 4억6천만 문장, 266억 토큰, 120GB, large : 약 506만건, 6억7천만 문장, 332억 토큰, 150GB)을 사전학습(pre-training)하였고, 무료로 제공하고 있습니다.
 <br>
 - KorPatBERT [언론보도](http://www.aitimes.kr/news/articleView.html?idxno=23637) 소개
-- Google ELECTRA 기반 특허분야 특화된 언어모델 [KorPatELECTRA](https://github.com/kipi-ai/korpatelectra) 소개 
+- Google ELECTRA 기반 특허분야 특화된 언어모델 [KorPatELECTRA](https://github.com/kipi-ai/korpatelectra) 소개
+- KorPatBERT-base, large 외 미국특허 320만 문헌(310GB)을 사전학습한 BERT-large 모델 제공 가능
 ## 
 - [1. KorPatBERT](#1-korpatbert)
 - [2. KorPatBERT 개요](#2-korpatbert-개요)
@@ -40,27 +42,42 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - Tensorflow-gpu >= 1.15.0
 - Sentencepiece >= 0.1.96
 - Horovod >= 0.19.2
+- 
 #### 학습환경
+<b>[KorPatBERT-base]</b>
 - 특허문헌 120GB 코퍼스의 4억 6천만 문장 학습
 - NVIDIA V100 32GB GPU 16개로 분산학습 라이브러리 Horovod를 이용하여 학습
 - NVIDIA AMP(Automated Mixed Precision) 방식을 활용하여, 메모리 최적화
 - 128 Sequence 2,300,000 Step 학습 + 512 Sequence 750,000 Step 학습
 
+<b>[KorPatBERT-large]</b>
+- 특허문헌 150GB 코퍼스의 6억 7천만 문장 학습
+- NVIDIA V100 32GB GPU 8개로 분산학습 라이브러리 Horovod를 이용하여 학습
+- NVIDIA AMP(Automated Mixed Precision) 방식을 활용하여, 메모리 최적화
+- 128 Sequence 2,250,000 Step 학습 + 512 Sequence 825,000 Step 학습
+
 ### 2-2. 코퍼스
+<b>[KorPatBERT-base]</b>
 - 특허문헌수 : 4,065,519건
 - 문장 수 : 460,448,189건
 - 토큰 수 : 약 266억건
 - 코퍼스 크기 : 약 120GB
 
+<b>[KorPatBERT-large]</b>
+- 특허문헌수 : 5,069,714건
+- 문장 수 : 675,017,195건
+- 토큰 수 : 약 332억건
+- 코퍼스 크기 : 약 150GB
+
 ### 2-3. 사전 및 토크나이저
-언어모델 학습에 사용된 특허문헌을 대상으로 약 666만개의 주요 명사 및 복합명사를 추출하였으며, 이를 한국어 형태소분석기 Mecab-ko의 사용자 사전에 추가 후 Google SentencePiece를 통하여 Subword로 분할하는 방식의 특허 텍스트에 특화된 MSP 토크나이저(Mecab-ko Sentencepiece Patent Tokenizer)입니다.
-- Mecab-ko 특허 사용자 사전파일명 : pat_all_mecab_dic.csv (6,663,693개 용어)
-- SentencePiece 사전파일명 : korpat_vocab.txt  (21,400개 토큰)
+언어모델 학습에 사용된 특허문헌을 대상으로 약 1,000만개의 주요 명사 및 복합명사를 추출하였으며, 이를 한국어 형태소분석기 Mecab-ko의 사용자 사전에 추가 후 Google SentencePiece를 통하여 Subword로 분할하는 방식의 특허 텍스트에 특화된 MSP 토크나이저(Mecab-ko Sentencepiece Patent Tokenizer)입니다.
+- Mecab-ko 특허 사용자 사전파일명 : pat_all_mecab_dic.csv (base 6,663,693개 용어, large 10,874,418개 용어)
+- SentencePiece 사전파일명 : korpat_vocab.txt  (base 21,400개, large 27000개)
 - SentencePiece 스페셜 토큰 : [PAD], [UNK], [CLS], [SEP], [MASK]
 - KorPat Tokenizer 파일명 : korpat_tokenizer.py
 
 ### 2-4. 평가
-- 특허데이터 기반 CPC 분류 태스크
+- 특허문헌 CPC코드 서브클래스(subclass) 분류 태스크
 	- 144 labels, train data 351,487, dev data 39,053, test data 16,316
 
 |<center>모델</center>|<center>평가점수(ACC)</center>|
@@ -69,7 +86,17 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 |KorBERT|73.29|
 |KoBERT|33.75|
 |KrBERT|72.39|
-|<b>KorPatBERT</b>|<b>76.32</b>|
+|<b>KorPatBERT-base</b>|<b>76.32</b>|
+|<b>KorPatBERT-large</b>|<b>77.06</b>|
+
+- 특허문헌 CPC코드 메인그룹(maingroup) 분류 태스크
+	- 10,327 labels, train data 4,991,984, dev data 554,665, test data 297,034
+
+|<center>모델</center>|<center>Top@1(ACC)</center>|<center>Top@3(ACC)</center>|<center>Top@5(ACC)</center>|
+|:--:|:--:|:--:|:--:|
+|KorPatBERT-base|61.91|82.18|86.97|
+|KorPatBERT-large|62.89|82.18|87.26|
+
 
 &nbsp;
 ## 3. KorPatBERT 사용 안내
