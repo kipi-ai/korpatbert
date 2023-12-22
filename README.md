@@ -81,7 +81,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 - 특허문헌 CPC코드 서브클래스(subclass) 분류 태스크
 	- 144 labels, train data 351,487, dev data 39,053, test data 16,316
 
-|<center>모델</center>|<center>평가점수(ACC)</center>|
+|<center>모델</center>|<center>Top@1(ACC)</center>|
 |:--:|:--:|
 |Google BERT|72.33|
 |KorBERT|73.29|
