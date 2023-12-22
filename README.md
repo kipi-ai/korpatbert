@@ -5,7 +5,7 @@ KorPatBERT(Korean Patent BERT)는 [한국특허정보원](https://www.kipi.or.kr
 <br>
 - KorPatBERT [언론보도](http://www.aitimes.kr/news/articleView.html?idxno=23637) 소개
 - Google ELECTRA 기반 특허분야 특화된 언어모델 [KorPatELECTRA](https://github.com/kipi-ai/korpatelectra) 소개
-※ KorPatBERT-base, large 외 미국특허 320만 문헌(310GB)을 사전학습한 BERT-large 모델 제공 가능
+- <b>KorPatBERT-base, large 외 미국특허 320만 문헌(310GB)을 사전학습한 BERT-large 모델 제공 가능</b>
 
 ## 
 - [1. KorPatBERT](#1-korpatbert)
